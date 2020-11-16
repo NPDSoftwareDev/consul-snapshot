@@ -64,7 +64,7 @@ func (c *Consul) ListACLs() {
 		RequireConsistent: true,
 	}
 
-	acls, _, err := c.Client.ACL().TokenList(listOpt)
+	acls, _, err := c.Client.ACL().List(listOpt)
 	if err != nil {
 		// Really don't like this but seems to be the only way to detect
 		if strings.Contains(err.Error(), "401 (ACL support disabled)") {
