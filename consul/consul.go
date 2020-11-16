@@ -15,7 +15,7 @@ type Consul struct {
 	KeyDataLen int
 	PQData     []*consulapi.PreparedQueryDefinition
 	PQDataLen  int
-	ACLData    []*consulapi.ACLEntry
+	ACLData    []*consulapi.ACLTokenListEntry
 	ACLDataLen int
 }
 
@@ -57,22 +57,22 @@ func (c *Consul) ListPQs() {
 	c.PQDataLen = len(pqs)
 }
 
-// ListACLs lists all the prepared queries from consul
-func (c *Consul) ListACLs() {
+// ListTokens lists all the prepared queries from consul
+func (c *Consul) ListTokens() {
 	listOpt := &consulapi.QueryOptions{
 		AllowStale:        false,
 		RequireConsistent: true,
 	}
 
-	acls, _, err := c.Client.ACL().List(listOpt)
+	acls, _, err := c.Client.ACL().TokenList(listOpt)
 	if err != nil {
 		// Really don't like this but seems to be the only way to detect
 		if strings.Contains(err.Error(), "401 (ACL support disabled)") {
 			log.Print("[INFO] ACL support detected as disbaled, skipping")
-			c.ACLData = []*consulapi.ACLEntry{}
+			c.ACLData = []*consulapi.ACLTokenListEntry{}
 			c.ACLDataLen = 0
 		} else {
-			log.Fatalf("[ERR] Unable to list ACLs: %v", err)
+			log.Fatalf("[ERR] Unable to list ACL tokens: %v", err)
 		}
 	} else {
 		c.ACLData = acls

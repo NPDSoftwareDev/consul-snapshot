@@ -6,13 +6,14 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"golang.org/x/net/context"
 	"io"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
 	"time"
+
+	"golang.org/x/net/context"
 
 	"cloud.google.com/go/storage"
 	"github.com/aws/aws-sdk-go/aws"
@@ -125,8 +126,8 @@ func doWork(conf *config.Config, client *consul.Consul) error {
 	log.Printf("[INFO] Converting %v keys to JSON", b.Client.PQDataLen)
 	b.PQsToJSON()
 
-	log.Print("[INFO] Listing ACLs from consul")
-	b.Client.ListACLs()
+	log.Print("[INFO] Listing ACL tokens from consul")
+	b.Client.ListTokens()
 	log.Printf("[INFO] Converting %v ACLs to JSON", b.Client.ACLDataLen)
 	b.ACLsToJSON()
 
