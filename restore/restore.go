@@ -21,10 +21,10 @@ import (
 	"github.com/aws/aws-sdk-go/service/s3/s3manager"
 	consulapi "github.com/hashicorp/consul/api"
 	"github.com/mholt/archiver"
-	"github.com/NPDSoftwareDev/consul-snapshot/backup"
-	"github.com/NPDSoftwareDev/consul-snapshot/config"
-	"github.com/NPDSoftwareDev/consul-snapshot/consul"
-	"github.com/NPDSoftwareDev/consul-snapshot/crypt"
+	"github.com/npdsoftwaredev/consul-snapshot/backup"
+	"github.com/npdsoftwaredev/consul-snapshot/config"
+	"github.com/npdsoftwaredev/consul-snapshot/consul"
+	"github.com/npdsoftwaredev/consul-snapshot/crypt"
 )
 
 // Restore is a struct to hold data about a single restore

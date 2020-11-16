@@ -9,16 +9,8 @@ cloud.google.com/go/internal/version
 # cloud.google.com/go/storage v1.12.0
 ## explicit
 cloud.google.com/go/storage
-# github.com/NPDSoftwareDev/consul-snapshot v0.2.3
-## explicit
-github.com/NPDSoftwareDev/consul-snapshot/backup
-github.com/NPDSoftwareDev/consul-snapshot/command
-github.com/NPDSoftwareDev/consul-snapshot/config
-github.com/NPDSoftwareDev/consul-snapshot/consul
-github.com/NPDSoftwareDev/consul-snapshot/crypt
-github.com/NPDSoftwareDev/consul-snapshot/health
-github.com/NPDSoftwareDev/consul-snapshot/restore
 # github.com/armon/go-metrics v0.3.4
+## explicit
 github.com/armon/go-metrics
 # github.com/armon/go-radix v1.0.0
 github.com/armon/go-radix
@@ -74,8 +66,6 @@ github.com/dsnet/compress/internal
 github.com/dsnet/compress/internal/prefix
 # github.com/fatih/color v1.9.0
 github.com/fatih/color
-# github.com/go-ini/ini v1.21.1
-## explicit
 # github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
 github.com/golang/groupcache/lru
 # github.com/golang/protobuf v1.4.2
@@ -88,8 +78,6 @@ github.com/golang/protobuf/ptypes/duration
 github.com/golang/protobuf/ptypes/timestamp
 # github.com/googleapis/gax-go/v2 v2.0.5
 github.com/googleapis/gax-go/v2
-# github.com/hashicorp/consul v1.8.5
-## explicit
 # github.com/hashicorp/consul/api v1.7.0
 ## explicit
 github.com/hashicorp/consul/api
@@ -100,6 +88,7 @@ github.com/hashicorp/go-cleanhttp
 # github.com/hashicorp/go-hclog v0.12.0
 github.com/hashicorp/go-hclog
 # github.com/hashicorp/go-immutable-radix v1.2.0
+## explicit
 github.com/hashicorp/go-immutable-radix
 # github.com/hashicorp/go-msgpack v1.1.5
 ## explicit
@@ -107,13 +96,15 @@ github.com/hashicorp/go-immutable-radix
 github.com/hashicorp/go-multierror
 # github.com/hashicorp/go-rootcerts v1.0.2
 github.com/hashicorp/go-rootcerts
+# github.com/hashicorp/go-sockaddr v1.0.2
+## explicit
+# github.com/hashicorp/go-uuid v1.0.2
+## explicit
 # github.com/hashicorp/golang-lru v0.5.4
+## explicit
 github.com/hashicorp/golang-lru/simplelru
-# github.com/hashicorp/hcl v1.0.0
-## explicit
-# github.com/hashicorp/raft v1.2.0
-## explicit
 # github.com/hashicorp/serf v0.9.4
+## explicit
 github.com/hashicorp/serf/coordinate
 # github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
 github.com/jmespath/go-jmespath
@@ -121,6 +112,8 @@ github.com/jmespath/go-jmespath
 github.com/jstemmer/go-junit-report
 github.com/jstemmer/go-junit-report/formatter
 github.com/jstemmer/go-junit-report/parser
+# github.com/kr/pretty v0.2.1
+## explicit
 # github.com/mattn/go-colorable v0.1.6
 github.com/mattn/go-colorable
 # github.com/mattn/go-isatty v0.0.12
@@ -133,7 +126,10 @@ github.com/mholt/archiver
 github.com/mitchellh/cli
 # github.com/mitchellh/go-homedir v1.1.0
 github.com/mitchellh/go-homedir
+# github.com/mitchellh/go-testing-interface v1.14.0
+## explicit
 # github.com/mitchellh/mapstructure v1.3.3
+## explicit
 github.com/mitchellh/mapstructure
 # github.com/nwaples/rardecode v0.0.0-20160723083021-f94841372ddc
 ## explicit
@@ -142,15 +138,7 @@ github.com/nwaples/rardecode
 github.com/posener/complete
 github.com/posener/complete/cmd
 github.com/posener/complete/cmd/install
-# github.com/NPDSoftwareDev/consul-snapshot v0.2.3
-## explicit
-github.com/NPDSoftwareDev/consul-snapshot/backup
-github.com/NPDSoftwareDev/consul-snapshot/config
-github.com/NPDSoftwareDev/consul-snapshot/consul
-github.com/NPDSoftwareDev/consul-snapshot/crypt
-github.com/NPDSoftwareDev/consul-snapshot/health
-github.com/NPDSoftwareDev/consul-snapshot/restore
-# github.com/smartystreets/goconvey v1.6.4
+# github.com/stretchr/testify v1.5.1
 ## explicit
 # go.opencensus.io v0.22.4
 go.opencensus.io
@@ -196,6 +184,7 @@ golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
 # golang.org/x/sys v0.0.0-20201007082116-8445cc04cbdf
+## explicit
 golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/unix
 # golang.org/x/text v0.3.3

@@ -4,7 +4,6 @@ go 1.15
 
 require (
 	cloud.google.com/go/storage v1.12.0
-	github.com/NPDSoftwareDev/consul-snapshot v0.2.3
 	github.com/armon/go-metrics v0.3.4 // indirect
 	github.com/aws/aws-sdk-go v1.25.41
 	github.com/dsnet/compress v0.0.0-20160704023633-b9aab3c6a04e // indirect
@@ -21,7 +20,6 @@ require (
 	github.com/mitchellh/go-testing-interface v1.14.0 // indirect
 	github.com/mitchellh/mapstructure v1.3.3 // indirect
 	github.com/nwaples/rardecode v0.0.0-20160723083021-f94841372ddc // indirect
-	github.com/NPDSoftwareDev/consul-snapshot v0.2.3 // indirect
 	github.com/stretchr/testify v1.5.1 // indirect
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
 	golang.org/x/net v0.0.0-20201110031124-69a78807bb2b

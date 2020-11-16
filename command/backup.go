@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/mitchellh/cli"
-	"github.com/NPDSoftwareDev/consul-snapshot/backup"
+	"github.com/npdsoftwaredev/consul-snapshot/backup"
 )
 
 // BackupCommand for running backups

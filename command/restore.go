@@ -2,7 +2,7 @@ package command
 
 import (
 	"fmt"
-	"github.com/NPDSoftwareDev/consul-snapshot/restore"
+	"github.com/npdsoftwaredev/consul-snapshot/restore"
 )
 
 // RestoreCommand for running restores

@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/mitchellh/cli"
-	"github.com/NPDSoftwareDev/consul-snapshot/command"
+	"github.com/npdsoftwaredev/consul-snapshot/command"
 )
 
 var (

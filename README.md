@@ -1,4 +1,4 @@
-# consul-snapshot [![](https://travis-ci.org/NPDSoftwareDev/consul-snapshot.svg)](https://travis-ci.org/NPDSoftwareDev/consul-snapshot)
+# consul-snapshot [![](https://travis-ci.org/npdsoftwaredev/consul-snapshot.svg)](https://travis-ci.org/npdsoftwaredev/consul-snapshot)
 
 consul-snapshot is a backup and restore utility for Consul (https://www.consul.io).  This is slightly different than some other utilities out there as this runs as a daemon for backups and ships them to S3.  consul snapshot in its current state is designed only for disaster recovery scenarios and full restore.  There is no support for single key or path based backups at the moment.
 
@@ -22,18 +22,18 @@ consul-snapshot has been used in production since February 2016.
 - EC2 IAM instance profile support(no credentials needed)
 
 ## Installation
-Grab the binary from [Releases](https://github.com/NPDSoftwareDev/consul-snapshot/releases)
+Grab the binary from [Releases](https://github.com/npdsoftwaredev/consul-snapshot/releases)
 
 consul-snapshot requires go 1.8.3 to build as consul requires 1.8.3.
 
 With go get:
 ```
-go get github.com/NPDSoftwareDev/consul-snapshot
+go get github.com/npdsoftwaredev/consul-snapshot
 ```
 
 From source:
 ```
-git clone https://github.com/NPDSoftwareDev/consul-snapshot
+git clone https://github.com/npdsoftwaredev/consul-snapshot
 cd consul-snapshot
 make
 make install
