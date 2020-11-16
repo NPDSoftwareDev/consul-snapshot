@@ -11,8 +11,8 @@ import (
 	"time"
 
 	consulapi "github.com/hashicorp/consul/api"
-	"github.com/pshima/consul-snapshot/config"
-	"github.com/pshima/consul-snapshot/consul"
+	"github.com/NPDSoftwareDev/consul-snapshot/config"
+	"github.com/NPDSoftwareDev/consul-snapshot/consul"
 )
 
 const (
