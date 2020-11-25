@@ -1,11 +1,17 @@
 FROM golang:1.15.4-alpine
 
-RUN apk update \
-  && apk add gcc musl-dev git linux-headers make
+RUN apk update && apk add gcc musl-dev git linux-headers make
 
-RUN go get github.com/npdsoftwaredev/consul-snapshot
+RUN mkdir /app
 
-COPY docker/docker-entrypoint.sh /docker-entrypoint.sh
-RUN chmod +x /docker-entrypoint.sh
+WORKDIR /app
 
-ENTRYPOINT [ "/docker-entrypoint.sh" ]
+ADD . /app
+
+RUN go build
+
+COPY docker/docker-entrypoint.sh /app/docker-entrypoint.sh
+
+RUN chmod +x /app/docker-entrypoint.sh
+
+ENTRYPOINT [ "/app/docker-entrypoint.sh" ]
