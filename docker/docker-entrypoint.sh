@@ -1,7 +1,7 @@
 #!/bin/sh
 
 run_app() {
-  consul-snapshot "${@}"
+  /app/consul-snapshot "${@}"
 }
 
 case "${1}" in
