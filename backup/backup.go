@@ -152,7 +152,7 @@ func doWork(conf *config.Config, client *consul.Consul) error {
 
 	pqchecksum, err := calcSha256(filepath.Join(b.LocalFilePath, b.LocalPQFileName))
 	if err != nil {
-		return fmt.Errorf("Unable to generate checksum for file %s: %v", b.LocalPQFileName, err)
+		return fmt.Errorf("unable to generate checksum for file %s: %v", b.LocalPQFileName, err)
 	}
 	b.PQFileChecksum = pqchecksum
 
@@ -275,14 +275,14 @@ func writeFileLocal(path string, filename string, contents []byte) error {
 	// Write the json to a gzip
 	handle, err := os.OpenFile(writepath, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
-		return fmt.Errorf("Could not open local file for writing!: %v", err)
+		return fmt.Errorf("could not open local file for writing!: %v", err)
 	}
 	defer handle.Close()
 
 	// Actually write the json to the file
 	bytesWritten, err := handle.Write(contents)
 	if err != nil {
-		return fmt.Errorf("Could not write data to file!: %v", err)
+		return fmt.Errorf("could not write data to file!: %v", err)
 	}
 
 	log.Printf("[DEBUG] Wrote %v bytes to file, %v", bytesWritten, writepath)
