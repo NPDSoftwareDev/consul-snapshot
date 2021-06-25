@@ -49,7 +49,7 @@ func testingStructs() *Backup {
 	consulClient.Client = *consul.Client()
 	consulClient.KeyData = kvpairlist
 	consulClient.PQData = pqtestlist
-	consulClient.ACLData = acltestlist
+	//consulClient.ACLData = acltestlist
 	backup := &Backup{
 		Client:        consulClient,
 		StartTime:     time.Now().Unix(),
